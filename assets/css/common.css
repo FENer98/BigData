@@ -51,11 +51,13 @@
   justify-content: space-between;
 }
 .header .header-selection a {
-  color: #444;
-  font-size: 16px;
+  color: #fff;
+  font-size: 14px;
   line-height: 22px;
-  border-bottom: 2px solid #aec7ec;
   padding-bottom: 19px;
+}
+.header .header-selection :first-child {
+  border-bottom: 2px solid #fff;
 }
 .header .header-button {
   position: absolute;

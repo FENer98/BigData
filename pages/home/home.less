@@ -1,3 +1,108 @@
 @import '../../assets/css/normalize.less';
 @import '../../assets/css/common.less';
 
+.banner {
+    height: 680px;
+    width: 100%;
+    min-width: 1200px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+
+    .outer {
+        margin: 0 auto;
+        height: 680px;
+        width: 100%;
+
+        .img-list {
+            :first-child {
+                background-image: url(../../assets/images/banner1.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                display: none;
+            }
+
+            :last-child {
+                background-image: url(../../assets/images/banner3.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                display: none;
+            }
+
+            :nth-child(2) {
+                background-image: url(../../assets/images/banner2.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                display: none;
+            }
+
+            li {
+                position: absolute;
+                height: 680px;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .current {
+                z-index: 1;
+                display: block;
+            }
+        }
+
+        .prev-img {
+            width: 60px;
+            height: 90px;
+            background-color: black;
+            position: absolute;
+            left: 0;
+            top: 290px;
+            z-index: 1;
+            opacity: .2;
+            font-size: 60px;
+            color: #fff;
+            overflow: hidden;
+            cursor: pointer;
+            background-image: url('../../assets/images/ad_ctr.png');
+        }
+        .next-img {
+            width: 60px;
+            height: 90px;
+            background-color: black;
+            position: absolute;
+            right: 0;
+            top: 290px;
+            z-index: 1;
+            opacity: .2;
+            overflow: hidden;
+            cursor: pointer;
+            background-image: url('../../assets/images/ad_ctr.png');
+            background-position: -3px -90px;
+        }
+
+        .dot-list{
+            width: 70px;
+            z-index: 10;
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            a{
+                background-color: #000;
+                opacity: .3;
+                width: 10px;
+                height: 10px;
+                display: block;
+                border-radius: 50%;
+            }
+            .currentBtn{
+                background-color:blue;
+            }
+        }
+    }
+
+}
