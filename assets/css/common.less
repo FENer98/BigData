@@ -1,0 +1,108 @@
+/* 公共属性样式 */
+
+/* 测试工具 */
+.bd {
+    border: 1px solid red;
+}
+
+
+/* 版心 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 浮动 */
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix::after {
+    content: '';
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+
+ 
+/* 公共模块样式 */
+
+/* 头部导航 */
+
+.header {
+    width: 100%;
+    min-width: 1200px;
+    height: 66px;
+    border-bottom: 1px solid #aec7ec;
+    position: relative;
+
+    .header-logo {
+        position: absolute;
+        left: 32px;
+        top: 19px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .header-selection {
+        position: absolute;
+        top: 24px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 160px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        a {
+            color: #444;
+            font-size: 16px;
+            line-height: 22px;
+            border-bottom: 2px solid #aec7ec;
+            padding-bottom: 19px;
+        }
+    }
+
+    .header-button {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+
+        a {
+            font-size: 12px;
+            border-radius: 13px;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 24px;
+            display: inline-block;
+            }
+
+            .header-login {
+                color: #444;
+                width:  58px ;
+                height: 26px;
+                border: 1px solid #ccc;
+                margin-right: 10px;
+            }
+
+            .header-logup {
+                color: #fff;
+                background-color: #ed510a;
+                width:78px ;
+                height:26px;
+            }
+
+        a:hover{
+            opacity: .5;
+        }
+
+    }
+}

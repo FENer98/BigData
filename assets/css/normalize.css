@@ -1,0 +1,18 @@
+/* 清除默认样式 */
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+  /* 清除图片底部间隙 */
+}
+ul {
+  list-style: none;
+  /* 清除列表前面样式 */
+}
+a {
+  text-decoration: none;
+  /* 去掉下划线 */
+}
+/* 重新设置样式 */
