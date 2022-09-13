@@ -91,7 +91,7 @@ a {
   display: inline-block;
 }
 .header .header-button .header-login {
-  color: #444;
+  color: #fff;
   width: 58px ;
   height: 26px;
   border: 1px solid #ccc;
@@ -349,11 +349,93 @@ a {
   color: #181818;
   bottom: 34px;
 }
-.api-service p {
+.api-service .bottomP {
   position: absolute;
   bottom: 68px;
 }
-.api-service p span {
+.api-service .bottomP span {
   color: #1271ef;
   cursor: pointer;
+}
+.apimaster {
+  width: 1200px;
+  height: 702px;
+  padding-top: 76px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.apimaster h3 {
+  font-size: 40px;
+  line-height: 60px;
+  color: #181818;
+  font-weight: normal;
+  position: absolute;
+  top: 70px;
+}
+.apimaster h5 {
+  font-size: 14px;
+  line-height: 24px;
+  color: #666;
+  font-weight: normal;
+  position: absolute;
+  top: 132px;
+}
+.apimaster a {
+  font-size: 12px;
+  line-height: 32px;
+  color: #1271ef;
+  margin-bottom: 34px;
+  position: absolute;
+  top: 172px;
+}
+.apimaster .bar-list {
+  width: 507px;
+  height: 546px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.apimaster .bar-list li {
+  position: relative;
+  width: 487px;
+  height: 48px;
+  padding: 15px 0 18px 20px;
+  background-color: #fbfbfd;
+}
+.apimaster .bar-list li .line {
+  position: absolute;
+  width: 4px;
+  height: 24px;
+  left: 0px;
+  top: 28px;
+  background-color: #1271ef;
+}
+.apimaster .bar-list li p {
+  line-height: 26px;
+  color: #333;
+  font-size: 18px;
+}
+.apimaster .bar-list li p img {
+  padding-bottom: 6px;
+}
+.apimaster .bar-list li .detail {
+  line-height: 22px;
+  color: #666;
+  font-size: 12px;
+}
+.apimaster .content-img {
+  width: 613px;
+  height: 596px;
+  background-image: url(../../assets/images/master-left-bg.svg);
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }

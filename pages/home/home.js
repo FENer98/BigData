@@ -37,12 +37,15 @@ outer.onmouseleave = () => {
 //左右按钮部分
 const prevBtn = document.querySelector(".prev-img")
 const nextBtn = document.querySelector(".next-img")
+console.log(prevBtn);
 
 prevBtn.addEventListener("click", () => {
     switchFn("prev")
+    console.log(1);
 })
 
 nextBtn.addEventListener("click", () => {
+    console.log(1);
     switchFn("next")
 })
 
@@ -91,10 +94,9 @@ const bottomBtn = Array.from(document.querySelectorAll(".banner .outer a"))
 document.addEventListener("click", (event) => {
     //获取当前点击的点在bottomBtn中的索引
     const index = bottomBtn.indexOf(event.target)
+    console.log(event.target);
     //判断点击是否是点
     if (index !== -1) {
-        //按钮class切换
-        //选中的按钮
 
         //切换图片和按钮直接调用switchFn()
         switchFn(index)
