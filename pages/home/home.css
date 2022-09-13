@@ -110,9 +110,9 @@ a {
   height: 680px;
   width: 100%;
   min-width: 1200px;
-  position: absolute;
+  position: relative;
   z-index: -1;
-  top: 0;
+  top: -66px;
 }
 .banner .outer {
   margin: 0 auto;
@@ -199,4 +199,161 @@ a {
 }
 .banner .outer .dot-list .currentBtn {
   background-color: blue;
+}
+/* 云服务 */
+.service {
+  width: 1080px;
+  height: 560px;
+  margin: 0 auto;
+  padding-top: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+}
+.service h3 {
+  font-size: 40px;
+  line-height: 60px;
+  color: #181818;
+  font-weight: normal;
+  position: absolute;
+  top: 41px;
+}
+.service h5 {
+  font-size: 14px;
+  line-height: 24px;
+  color: #666;
+  font-weight: normal;
+  position: absolute;
+  top: 98px;
+}
+.service a {
+  font-size: 12px;
+  line-height: 32px;
+  color: #1271ef;
+  margin-bottom: 34px;
+  position: absolute;
+  top: 130px;
+}
+.service .service-container {
+  width: 1080px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  top: 180px;
+}
+.service .service-container div {
+  height: 280px;
+  width: 240px;
+  box-shadow: 1px 4px 8px 0 rgba(18, 113, 239, 0.6);
+}
+.service .service-container div h6 {
+  font-size: 22px;
+  color: #181818;
+  line-height: 34px;
+  padding-left: 22px;
+  font-weight: normal;
+}
+.service .service-container div p {
+  font-size: 12px;
+  color: #666;
+  line-height: 24px;
+  padding-left: 22px;
+}
+.service .service-container div span {
+  display: block;
+  font-size: 12px;
+  line-height: 31px;
+  color: #1271ef;
+  padding-left: 22px;
+  padding-bottom: 13px;
+  margin-top: 10px;
+}
+.api-service-outer {
+  height: 642px;
+  width: 100%;
+  background: url(../../assets/images/more-api-bg.svg) center top no-repeat #f8f9fb;
+}
+.api-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 642px;
+}
+.api-service h3 {
+  font-size: 40px;
+  line-height: 60px;
+  color: #181818;
+  font-weight: normal;
+  position: absolute;
+  top: 70px;
+}
+.api-service h5 {
+  font-size: 14px;
+  line-height: 24px;
+  color: #666;
+  font-weight: normal;
+  position: absolute;
+  top: 132px;
+}
+.api-service a {
+  font-size: 12px;
+  line-height: 32px;
+  color: #1271ef;
+  margin-bottom: 34px;
+  position: absolute;
+  top: 172px;
+}
+.api-service .api-container1 {
+  position: absolute;
+  top: 218px;
+}
+.api-service .api-container2 {
+  position: absolute;
+  top: 376px;
+}
+.api-service .api-container1,
+.api-service .api-container2 {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.api-service .api-container1 div,
+.api-service .api-container2 div {
+  width: 224px;
+  height: 138px;
+  text-align: center;
+  box-shadow: 1px 4px 8px 0 rgba(18, 113, 239, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.api-service .api-container1 div img,
+.api-service .api-container2 div img {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 36px;
+}
+.api-service .api-container1 div p,
+.api-service .api-container2 div p {
+  font-size: 16px;
+  color: #181818;
+  bottom: 34px;
+}
+.api-service p {
+  position: absolute;
+  bottom: 68px;
+}
+.api-service p span {
+  color: #1271ef;
+  cursor: pointer;
 }
