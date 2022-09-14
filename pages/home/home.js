@@ -37,7 +37,7 @@ outer.onmouseleave = () => {
 //左右按钮部分
 const prevBtn = document.querySelector(".prev-img")
 const nextBtn = document.querySelector(".next-img")
-console.log(prevBtn);
+// console.log(prevBtn);
 
 prevBtn.addEventListener("click", () => {
     switchFn("prev")
@@ -94,7 +94,6 @@ const bottomBtn = Array.from(document.querySelectorAll(".banner .outer a"))
 document.addEventListener("click", (event) => {
     //获取当前点击的点在bottomBtn中的索引
     const index = bottomBtn.indexOf(event.target)
-    console.log(event.target);
     //判断点击是否是点
     if (index !== -1) {
 
@@ -137,3 +136,39 @@ for (let i = 0; i < apiList.length; i++){
         apiList[i].firstElementChild.src = newSrc
     })
 }
+
+/* 合作企业 */
+
+setTimeout(function auto() {
+    //获取正在显示的和下一个显示的
+    const currentCon = document.querySelector(".current-content") 
+    // console.log(currentCon);
+    const nextCon = currentCon.nextElementSibling || document.querySelector(".content-bc1")
+    // console.log(nextCon);
+    //修改它们的类
+    currentCon.classList.toggle("current-content")
+    nextCon.classList.toggle("current-content")
+    setTimeout(auto,3000)
+}, 3000)
+
+/* 回到顶部按钮 */
+const returnBtn = document.querySelector(".return-btn")
+// console.log(returnBtn);
+
+//按钮出现与消失
+window.addEventListener("scroll", () => {
+    if (window.scrollY >= 500) {
+        returnBtn.style.display = "block"
+    }
+    else {
+        returnBtn.style.display = "none"  
+    }
+})
+//按钮点击事件
+returnBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"  
+    })
+})
