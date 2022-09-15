@@ -199,72 +199,54 @@
     }
 }
 
+
+
 /* 登录菜单 */
-.menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    background-color: white;
-    width: 400px;
-    height: 550px;
-    padding: 20px;
-    box-sizing: border-box;
-    opacity: 1;
-    z-index: 1;
-    display: none;
-
-    .logo {
-        width: 195px;
-        height: 50px;
-        padding-top: 5px;
-        margin: 0 auto;
-        margin-bottom: 28px;
-    }
-
-    .tab-sel {
-        width: 190px;
-        margin: 0 auto 36px auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        li:not(.line) {
-            line-height: 44px;
-            font-size: 16px;
-            color: #555;
-            cursor: pointer;
-        }
-
-        li.active-sel {
-            color: #00bdff;
-            position: relative;
-        }
-
-        .active-sel::after {
-            content: '';
-            width: 43px;
-            height: 3px;
-            position: absolute;
-            bottom: 0;
-            left: 5px;
-            background-color: #00bdff;
-        }
-
-        .line {
-            width: 2px;
-            height: 12px;
-            background-color: #eee;
-            margin-top: 16px;
-        }
-    }
 
     .tab-box {
         width: 360px;
         height: 324px;
         position: relative;
+
+        .tab-sel {
+            width: 190px;
+            margin: 0 auto 36px auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            li:not(.line) {
+                line-height: 44px;
+                font-size: 16px;
+                color: #555;
+                cursor: pointer;
+            }
+
+            li.active-sel {
+                color: #00bdff;
+                position: relative;
+
+                &::after {
+                content: '';
+                width: 43px;
+                height: 3px;
+                position: absolute;
+                bottom: 0;
+                left: 5px;
+                background-color: #00bdff;
+                }
+            }
+
+            
+
+            .line {
+                width: 2px;
+                height: 12px;
+                background-color: #eee;
+                margin-top: 16px;
+            }
+            
+        }
 
         //登录选项卡
         .login-sec {
@@ -420,6 +402,7 @@
                     position: relative;
                     bottom: -25px;
                     left: -1px;
+                    display: none;
 
                     span {
                         color: #00bdff;
@@ -446,5 +429,3 @@
         }
     }
 
-
-}

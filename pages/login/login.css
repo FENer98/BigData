@@ -194,47 +194,29 @@ a {
   margin-right: 0;
 }
 /* 登录菜单 */
-.menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  background-color: white;
-  width: 400px;
-  height: 550px;
-  padding: 20px;
-  box-sizing: border-box;
-  opacity: 1;
-  z-index: 1;
-  display: none;
+.tab-box {
+  width: 360px;
+  height: 324px;
+  position: relative;
 }
-.menu .logo {
-  width: 195px;
-  height: 50px;
-  padding-top: 5px;
-  margin: 0 auto;
-  margin-bottom: 28px;
-}
-.menu .tab-sel {
+.tab-box .tab-sel {
   width: 190px;
   margin: 0 auto 36px auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.menu .tab-sel li:not(.line) {
+.tab-box .tab-sel li:not(.line) {
   line-height: 44px;
   font-size: 16px;
   color: #555;
   cursor: pointer;
 }
-.menu .tab-sel li.active-sel {
+.tab-box .tab-sel li.active-sel {
   color: #00bdff;
   position: relative;
 }
-.menu .tab-sel .active-sel::after {
+.tab-box .tab-sel li.active-sel::after {
   content: '';
   width: 43px;
   height: 3px;
@@ -243,18 +225,13 @@ a {
   left: 5px;
   background-color: #00bdff;
 }
-.menu .tab-sel .line {
+.tab-box .tab-sel .line {
   width: 2px;
   height: 12px;
   background-color: #eee;
   margin-top: 16px;
 }
-.menu .tab-box {
-  width: 360px;
-  height: 324px;
-  position: relative;
-}
-.menu .tab-box .login-sec {
+.tab-box .login-sec {
   width: 360px;
   height: 242px;
   background-color: #fff;
@@ -262,7 +239,7 @@ a {
   top: 80px;
   left: 0px;
 }
-.menu .tab-box .login-sec .user-box {
+.tab-box .login-sec .user-box {
   height: 24px;
   line-height: 24px;
   padding-bottom: 9px;
@@ -273,7 +250,7 @@ a {
   margin-bottom: 26px;
   position: relative;
 }
-.menu .tab-box .login-sec .user-box input {
+.tab-box .login-sec .user-box input {
   border: none;
   outline: none;
   width: 296px;
@@ -282,7 +259,7 @@ a {
   color: #000;
   font-size: 12px;
 }
-.menu .tab-box .login-sec .pass-box {
+.tab-box .login-sec .pass-box {
   height: 24px;
   line-height: 24px;
   padding-bottom: 9px;
@@ -293,7 +270,7 @@ a {
   margin-bottom: 26px;
   position: relative;
 }
-.menu .tab-box .login-sec .pass-box input {
+.tab-box .login-sec .pass-box input {
   border: none;
   outline: none;
   width: 296px;
@@ -302,7 +279,7 @@ a {
   color: #000;
   font-size: 12px;
 }
-.menu .tab-box .login-sec a {
+.tab-box .login-sec a {
   width: 56px;
   height: 52px;
   color: #00bdff;
@@ -312,7 +289,7 @@ a {
   right: 0;
   top: 94px;
 }
-.menu .tab-box .login-sec .login-btn {
+.tab-box .login-sec .login-btn {
   width: 360px;
   height: 46px;
   background-color: #03c5ff;
@@ -322,7 +299,7 @@ a {
   border: none;
   margin-top: 26px;
 }
-.menu .tab-box .login-sec p {
+.tab-box .login-sec p {
   text-align: right;
   width: 290px;
   margin: 0 auto;
@@ -330,12 +307,12 @@ a {
   color: #909090;
   font-size: 14px;
 }
-.menu .tab-box .login-sec p span {
+.tab-box .login-sec p span {
   color: #00bdff;
   margin-right: 5px;
   cursor: pointer;
 }
-.menu .tab-box .login-sec p .forget-img {
+.tab-box .login-sec p .forget-img {
   width: 15px;
   height: 21px;
   display: inline-block;
@@ -345,8 +322,8 @@ a {
   position: relative;
   top: 2px;
 }
-.menu .tab-box .login-sec .user-res,
-.menu .tab-box .login-sec .pass-res {
+.tab-box .login-sec .user-res,
+.tab-box .login-sec .pass-res {
   height: 12px;
   width: 360px;
   position: absolute;
@@ -356,7 +333,7 @@ a {
   text-align: left;
   line-height: 12px;
 }
-.menu .tab-box .logup-sec {
+.tab-box .logup-sec {
   width: 360px;
   height: 291px;
   background-color: #fff;
@@ -364,7 +341,7 @@ a {
   top: 80px;
   left: 0px;
 }
-.menu .tab-box .logup-sec .qr-box {
+.tab-box .logup-sec .qr-box {
   width: 290px;
   height: 241px;
   background-color: #fcfcfc;
@@ -375,15 +352,15 @@ a {
   font-size: 14px;
   margin: 0 auto;
 }
-.menu .tab-box .logup-sec .qr-box img {
+.tab-box .logup-sec .qr-box img {
   width: 120px;
   height: 120px;
   margin-bottom: 5px;
 }
-.menu .tab-box .logup-sec .qr-box p {
+.tab-box .logup-sec .qr-box p {
   line-height: 30px;
 }
-.menu .tab-box .logup-sec .qr-box .bottom-p {
+.tab-box .logup-sec .qr-box .bottom-p {
   text-align: left;
   width: 290px;
   margin: 0 auto;
@@ -393,13 +370,14 @@ a {
   position: relative;
   bottom: -25px;
   left: -1px;
+  display: none;
 }
-.menu .tab-box .logup-sec .qr-box .bottom-p span {
+.tab-box .logup-sec .qr-box .bottom-p span {
   color: #00bdff;
   margin-right: 5px;
   cursor: pointer;
 }
-.menu .tab-box .logup-sec .qr-box .bottom-p .forget-img {
+.tab-box .logup-sec .qr-box .bottom-p .forget-img {
   width: 15px;
   height: 21px;
   display: inline-block;
@@ -409,7 +387,7 @@ a {
   position: relative;
   top: 2px;
 }
-.menu .tab-box .active-sec {
+.tab-box .active-sec {
   z-index: 10;
 }
 body {
@@ -461,36 +439,4 @@ body {
   padding-top: 5px;
   margin: 0 auto;
   margin-bottom: 28px;
-}
-.right-bd .menu .tab-sel {
-  width: 190px;
-  margin: 0 auto 36px auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.right-bd .menu .tab-sel li:not(.line) {
-  line-height: 44px;
-  font-size: 16px;
-  color: #555;
-  cursor: pointer;
-}
-.right-bd .menu .tab-sel li.active {
-  color: #00bdff;
-  position: relative;
-}
-.right-bd .menu .tab-sel .active::after {
-  content: '';
-  width: 43px;
-  height: 3px;
-  position: absolute;
-  bottom: 0;
-  left: 5px;
-  background-color: #00bdff;
-}
-.right-bd .menu .tab-sel .line {
-  width: 2px;
-  height: 12px;
-  background-color: #eee;
-  margin-top: 16px;
 }
