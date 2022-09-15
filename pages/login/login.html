@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,44 +8,55 @@
     <title>登录页面</title>
     <link rel="stylesheet" href="./login.css">
 </head>
+
 <body>
     <!-- 左边背景 -->
     <div class="left-bd">
         <img src="../../assets/images/login-bg.png" alt="">
     </div>
+
+
+
     <!-- 右边背景 -->
     <div class="right-bd">
-        <div class="login-menu bd">
+        <div class="menu">
             <div class="logo">
                 <img src="../../assets/images/loginlogo.png" alt="">
             </div>
             <div class="tab-box">
                 <ul class="tab-sel">
-                    <li class="active">账号登录</li>
+                    <li class="login-selector active-sel">账号登录</li>
                     <li class="line"></li>
-                    <li>扫码登录</li>
+                    <li class="logup-selector">扫码登录</li>
                 </ul>
 
-                <div class="login-sec bd">
+                <div class="login-sec active-sec">
                     <form>
                         <div class="user-box">
-                            <img src="../../assets/images/loginIcon.png" alt="">
                             <input type="text" id="user" placeholder="用户名/手机号/邮箱">
-                            <img src="../../assets/images/clearInput.png" alt="">
+                            <p class="user-res"></p>
+                            <img class="user-delBtn" src="../../assets/images/clearInput.png" alt="">
                         </div>
-                        
+
                         <div class="pass-box">
-                            <img src="../../assets/images/loginIcon.png" alt="">
                             <input type="password" id="pass" placeholder="密码">
-                            <img src="../../assets/images/clearInput.png" alt="">
+                            <p class="pass-res"></p>
+                            <img class="pass-delBtn" src="../../assets/images/clearInput.png" alt="">
                         </div>
                         <a href="#">忘记密码</a>
                         <button class="login-btn">登录</button>
-                        <p>还没有源码账号， <span>立即注册</span> </p>
+                        <p>还没有源码账号， <span>立即注册</span> <span class="forget-img"></span></p>
                     </form>
                 </div>
-                <div class="logup-sec">
 
+                <!-- 扫码界面 -->
+                <div class="logup-sec">
+                    <div class="qr-box">
+                        <img src="../../assets/images/showqrcode.jpg" alt="">
+                        <p>微信扫码登录</p>
+                        <p>未关注源码科技公众号，请先关注后再登录</p>
+                        <p class="bottom-p">还没有源码账号， <span>立即注册</span> <span class="forget-img"></span></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -52,4 +64,5 @@
 
     <script src="./login.js"></script>
 </body>
+
 </html>
