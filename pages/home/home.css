@@ -74,8 +74,13 @@ a {
   line-height: 22px;
   padding-bottom: 19px;
 }
-.header .header-selection :first-child {
-  border-bottom: 2px solid #fff;
+.header .header-selection .active {
+  color: #00bdff;
+  font-size: 16px;
+  display: inline-block;
+}
+.header .header-selection .active-li {
+  border-bottom: 2px solid #00bdff;
 }
 .header .header-button {
   position: absolute;
@@ -192,6 +197,211 @@ a {
   position: absolute;
   right: 0;
   margin-right: 0;
+}
+/* 登录菜单 */
+.tab-box {
+  width: 360px;
+  height: 324px;
+  position: relative;
+}
+.tab-box .tab-sel {
+  width: 190px;
+  margin: 0 auto 36px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tab-box .tab-sel li:not(.line) {
+  line-height: 44px;
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+}
+.tab-box .tab-sel li.active-sel {
+  color: #00bdff;
+  position: relative;
+}
+.tab-box .tab-sel li.active-sel::after {
+  content: '';
+  width: 43px;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  background-color: #00bdff;
+}
+.tab-box .tab-sel .line {
+  width: 2px;
+  height: 12px;
+  background-color: #eee;
+  margin-top: 16px;
+}
+.tab-box .login-sec {
+  width: 360px;
+  height: 242px;
+  background-color: #fff;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+}
+.tab-box .login-sec .user-box {
+  height: 24px;
+  line-height: 24px;
+  padding-bottom: 9px;
+  padding-left: 32px;
+  background: url(../../assets/images/loginIcon.png) no-repeat;
+  background-position: -52px -1px;
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 26px;
+  position: relative;
+}
+.tab-box .login-sec .user-box input {
+  border: none;
+  outline: none;
+  width: 296px;
+  height: 24px;
+  line-height: 24px;
+  color: #000;
+  font-size: 12px;
+}
+.tab-box .login-sec .pass-box {
+  height: 24px;
+  line-height: 24px;
+  padding-bottom: 9px;
+  padding-left: 32px;
+  background: url(../../assets/images/loginIcon.png) no-repeat;
+  background-position: -24px -1px;
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 26px;
+  position: relative;
+}
+.tab-box .login-sec .pass-box input {
+  border: none;
+  outline: none;
+  width: 296px;
+  height: 24px;
+  line-height: 24px;
+  color: #000;
+  font-size: 12px;
+}
+.tab-box .login-sec a {
+  width: 56px;
+  height: 52px;
+  color: #00bdff;
+  line-height: 52px;
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  top: 94px;
+}
+.tab-box .login-sec .login-btn {
+  width: 360px;
+  height: 46px;
+  background-color: #03c5ff;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  margin-top: 26px;
+}
+.tab-box .login-sec p {
+  text-align: right;
+  width: 290px;
+  margin: 0 auto;
+  line-height: 50px;
+  color: #909090;
+  font-size: 14px;
+}
+.tab-box .login-sec p span {
+  color: #00bdff;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.tab-box .login-sec p .forget-img {
+  width: 15px;
+  height: 21px;
+  display: inline-block;
+  background: url(../../assets/images/loginIcon.png) no-repeat;
+  background-position: -56px -31px;
+  text-align: bottom;
+  position: relative;
+  top: 2px;
+}
+.tab-box .login-sec .user-res,
+.tab-box .login-sec .pass-res {
+  height: 12px;
+  width: 360px;
+  position: absolute;
+  left: 0px;
+  bottom: -17px;
+  font-size: 12px;
+  text-align: left;
+  line-height: 12px;
+}
+.tab-box .logup-sec {
+  width: 360px;
+  height: 291px;
+  background-color: #fff;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+}
+.tab-box .logup-sec .qr-box {
+  width: 290px;
+  height: 241px;
+  background-color: #fcfcfc;
+  border: 1px solid #eee;
+  padding-top: 30px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin: 0 auto;
+}
+.tab-box .logup-sec .qr-box img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 5px;
+}
+.tab-box .logup-sec .qr-box p {
+  line-height: 30px;
+}
+.tab-box .logup-sec .qr-box .bottom-p {
+  text-align: left;
+  width: 290px;
+  margin: 0 auto;
+  line-height: 50px;
+  color: #909090;
+  font-size: 14px;
+  position: relative;
+  bottom: -25px;
+  left: -1px;
+  display: none;
+}
+.tab-box .logup-sec .qr-box .bottom-p span {
+  color: #00bdff;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.tab-box .logup-sec .qr-box .bottom-p .forget-img {
+  width: 15px;
+  height: 21px;
+  display: inline-block;
+  background: url(../../assets/images/loginIcon.png) no-repeat;
+  background-position: -56px -31px;
+  text-align: bottom;
+  position: relative;
+  top: 2px;
+}
+.tab-box .active-sec {
+  z-index: 10;
+}
+.header .header-selection .active-li {
+  border-bottom: 2px solid #fff;
+}
+.header .header-selection .active-li .active {
+  color: #fff;
+  font-size: 16px;
+  display: inline-block;
 }
 .banner {
   height: 680px;

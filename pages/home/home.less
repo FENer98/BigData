@@ -1,6 +1,20 @@
 @import '../../assets/css/normalize.less';
 @import '../../assets/css/common.less';
 
+
+//修改头部样式
+.header .header-selection .active-li {
+    border-bottom: 2px solid #fff;
+
+    .active {
+        color: #fff;
+        font-size: 16px;
+        display: inline-block;
+    }
+}
+
+
+//轮播图
 .banner {
     height: 680px;
     width: 100%;
@@ -364,7 +378,9 @@
         top: 154px;
     }
 
-    .content-bc1,.content-bc2,.content-bc3 {
+    .content-bc1,
+    .content-bc2,
+    .content-bc3 {
         height: 270px;
         width: 100%;
         background-color: #f8f9fb;
@@ -377,16 +393,19 @@
             height: 270px;
             position: relative;
             display: block;
+
             .yinhao {
                 position: relative;
                 top: -20px;
                 margin-bottom: 10px;
             }
+
             p {
                 margin-bottom: 50px;
                 font-size: 14px;
                 line-height: 24px;
             }
+
             .arthor {
                 font-size: 12px;
                 line-height: 24px;
@@ -404,6 +423,7 @@
                     background-color: #1271ef;
                 }
             }
+
             .logo {
                 width: 580px;
                 height: 290px;
@@ -413,59 +433,70 @@
             }
         }
     }
-    .current-content{
+
+    .current-content {
         z-index: 1;
         opacity: 1;
     }
 }
+
 /* 数据安全 */
 
-.data-safe{
+.data-safe {
     height: 280px;
     margin-top: 96px;
     padding-bottom: 63px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    .links{
+
+    .links {
         line-height: 54px;
         margin-bottom: 0px;
     }
-    .img-list{
+
+    .img-list {
         height: 142px;
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        li{
+
+        li {
             width: 200px;
             height: 142px;
             text-align: center;
-            p{
+
+            p {
                 font-size: 12px;
                 line-height: 52px;
             }
         }
-        :nth-child(3),:nth-child(4),:nth-child(5){
+
+        :nth-child(3),
+        :nth-child(4),
+        :nth-child(5) {
             padding-top: 20px;
         }
     }
 }
 
 /* 立即体验 */
-.exp{
+.exp {
     height: 176px;
     padding-top: 64px;
     width: 100%;
     background: url(../../assets/images/login-register-bg.svg) #1271ef;
     text-align: center;
-    h3{
+
+    h3 {
         font-size: 32px;
         color: #fff;
         margin-bottom: 22px;
         font-weight: normal;
     }
-    .exp-box{
+
+    .exp-box {
         display: block;
         width: 128px;
         height: 40px;
@@ -478,7 +509,7 @@
 }
 
 /* 回到顶部按钮 */
-.return-btn{
+.return-btn {
     height: 40px;
     width: 40px;
     border-radius: 50%;
