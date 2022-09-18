@@ -50,3 +50,63 @@ drowDown.addEventListener("mouseenter", () => {
 drowDown.addEventListener("mouseleave", () => {
     qrbox.style.height = "0"
 })
+
+
+//选项卡
+const tabSelector = document.querySelectorAll(".tab-selector li")
+console.log(tabSelector);
+const apiTest = document.querySelector(".api-test")
+const tableBox1 =document.querySelector(".tableBox1")
+const tableBox2 =document.querySelector(".tableBox2")
+const tableBox3 = document.querySelector(".tableBox3")
+const json = document.querySelector(".json")
+
+for (let i = 0; i < tabSelector.length; i++){
+    tabSelector[i].addEventListener("click", (event) => {
+        //修改active-tab样式
+        const currentTab = document.querySelector(".active-tab")
+        currentTab.classList.remove("active-tab")
+        event.target.classList.add("active-tab")
+
+        //显示选项卡
+        if (i===1) {
+            apiTest.style.display = "none"
+            tableBox1.style.display = "block"
+            tableBox2.style.display = "block"
+            json.style.display = "block"
+            tableBox3.style.display = "none"
+        }
+        else if (i === 2) {
+            apiTest.style.display = "none"
+            tableBox1.style.display = "none"
+            tableBox2.style.display = "none"
+            json.style.display = "block"
+            tableBox3.style.display = "none"
+        }
+        else if (i === 3) {
+            apiTest.style.display = "none"
+            tableBox1.style.display = "none"
+            tableBox2.style.display = "none"
+            json.style.display = "none"
+            tableBox3.style.display = "block"
+        }
+        else {
+            apiTest.style.display = "block"
+            tableBox1.style.display = "block"
+            tableBox2.style.display = "block"
+            json.style.display = "block"
+            tableBox3.style.display = "none"
+        }
+
+        //获取tab-contain高度
+
+        const tabContain = document.querySelector(".tab-contain")
+        const tabLeft = document.querySelector(".tab-left")
+        const tabRight = document.querySelector(".tab-right")
+
+
+        tabContain.style.height = 47+Math.max(tabLeft.clientHeight,tabRight.clientHeight) +"px"
+    })
+}
+
+

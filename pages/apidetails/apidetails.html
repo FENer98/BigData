@@ -16,7 +16,7 @@
         </div>
 
         <ul class="header-selection">
-            <li> <a href="#">首页</a> </li>
+            <li> <a href="../home/home.html">首页</a> </li>
             <li class="active-li"> <a class="active" href="../api/api.html">API</a> </li>
             <li> <a href="#">案例</a> </li>
         </ul>
@@ -98,7 +98,7 @@
     <main>
         <div class="tab-top">
             <div class="container">
-                <ul>
+                <ul class="tab-selector">
                     <li class="active-tab">API文档</li>
                     <li>错误码参照</li>
                     <li>示例代码</li>
@@ -119,13 +119,13 @@
                     <div class="testBtn">API测试工具</div>
                 </div>
 
-                <div class="tabel-box">
+                <div class="tableBox tableBox1">
                     <p class="title">请求参数说明：</p>
                     <table>
-                        <thead>
-                            <td>名称</td>
-                            <td>必填</td>
-                            <td>类型</td>
+                        <thead class="first-line">
+                            <td width="20%">名称</td>
+                            <td width="15%">必填</td>
+                            <td width="15%">类型</td>
                             <td>说明</td>
                         </thead>
 
@@ -156,12 +156,12 @@
                     </table>
                 </div>
 
-                <div class="tabel-box">
+                <div class="tableBox tableBox2">
                     <p class="title">返回参数说明：</p>
                     <table>
-                        <thead>
-                            <td>名称</td>
-                            <td>类型</td>
+                        <thead class="first-line">
+                            <td width="80">名称</td>
+                            <td width="15%">类型</td>
                             <td>说明</td>
                         </thead>
 
@@ -201,35 +201,26 @@
                 <div class="json">
                     <p class="title">JSON返回示例：</p>
                     <div class="jsonBtn">JSON在线格式化工具</div>
-                    <pre>
-                        {
-
-                            "reason": "成功",
-                            
-                            "result": {
-                            
-                            "realname": "***",/*真实姓名*/
-                            
-                            "idcard": "******************",/*身份证号码*/
-                            
-                            "orderid":"J103202010151450419556",/*流水号*/
-                            
-                            "res": 1 /*1：匹配 2：不匹配*/
-                            
-                            },
-                            
-                            "error_code": 0
-                            
-                            }
+                    <pre class="code">
+{
+    "reason": "成功",
+    "result": {  
+    "realname": "***",/*真实姓名*/   
+    "idcard": "******************",/*身份证号码*/ 
+    "orderid":"J103202010151450419556",/*流水号*/   
+    "res": 1 /*1：匹配 2：不匹配*/
+    },   
+    "error_code": 0  
+}    
                     </pre>
                 </div>
 
-                <div class="tabel-box">
+                <div class="tableBox tableBox3">
                     <p class="title">联系我们</p>
                     <table>
-                        <thead>
-                            <td>内容</td>
-                            <td>详细</td>
+                        <thead class="first-line">
+                            <td width="40%">内容</td>
+                            <td width="40%">详细</td>
                         </thead>
 
                         <tr>
@@ -319,10 +310,15 @@
         </div>
     </main>
 
+    <div class="bottom-banner">
+        <div class="text container">
+            <h3>现在注册，百款接口免费测试</h3>
+            <a href="#">免费注册</a>
+        </div>
+    </div>
 
 
-
-    <!-- 底部信息
+    <!-- 底部信息 -->
     <div class="foot-outer">
         <div class="foot container">
             <dl>
@@ -388,7 +384,7 @@
                 <span class="right-span">源码大数据股份有限公司©版权所有</span>
             </div>
         </div>
-    </div> -->
+    </div>
 
 
     <script src="../../libs/canvas-particle.js"></script><!-- 先引入插件再引入js -->
