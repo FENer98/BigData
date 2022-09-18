@@ -1,0 +1,208 @@
+@import url("../../assets/css/common.css");
+@import url("../../assets/css/normalize.css");
+body {
+  background-color: #f8f8f8;
+}
+body .header {
+  z-index: 2;
+}
+body .header .header-selection a {
+  color: #fff;
+}
+body .header .header-selection .active {
+  color: #fff;
+}
+body .header .header-selection .active-li {
+  border-bottom: 2px solid #fff;
+}
+body .header .header-button .header-login {
+  color: #fff;
+  border-color: #fff;
+}
+body .banner {
+  background-color: #f1f1f1;
+  box-sizing: border-box;
+  height: 360px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+body .banner canvas {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-1000px);
+  min-width: 1200px;
+}
+body .banner .banner-mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.88);
+  z-index: 1;
+}
+body .banner .banner-content {
+  position: absolute;
+  left: 50%;
+  top: 56%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  text-align: center;
+}
+body .banner .banner-content h2 {
+  font-size: 36px;
+  color: #fff;
+  line-height: 54px;
+  font-weight: normal;
+}
+body .banner .banner-content p {
+  font-size: 14px;
+  color: #fff;
+  line-height: 34px;
+}
+body .banner .banner-content .tag {
+  font-size: 16px;
+  line-height: 26px;
+}
+body main {
+  position: relative;
+  top: 323px;
+}
+body main h3 {
+  font-size: 16px;
+  line-height: 26px;
+  color: #000;
+  padding-bottom: 10px;
+}
+body main h3 span {
+  color: #999;
+  font-size: 12px;
+}
+body main h3 .line {
+  width: 14px;
+  height: 2px;
+  background-color: #1271ef;
+  margin-top: 5px;
+}
+body main ul {
+  width: 1128px;
+  height: 342px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: row;
+}
+body main ul li {
+  width: 334px;
+  height: 320px;
+  padding: 10px;
+  border: 1px solid #eee;
+  margin-right: 20px;
+  position: relative;
+}
+body main ul li img {
+  width: 334px;
+  height: 145px;
+  margin-bottom: 18px;
+}
+body main ul li h5 {
+  font-size: 16px;
+  line-height: 40px;
+  color: #181818;
+  padding-left: 11px;
+  font-weight: normal;
+}
+body main ul li p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #666;
+  margin-bottom: 25px;
+  padding-left: 11px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+body main ul li .link {
+  color: #1271ef;
+}
+body main ul li a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body .more {
+  height: 464px;
+  min-width: 1200px;
+  border-top: 18px;
+  position: relative;
+  top: 323px;
+  padding-bottom: 60px;
+}
+body .more h3 {
+  font-size: 16px;
+  line-height: 26px;
+  color: #000;
+  padding-bottom: 10px;
+}
+body .more h3 span {
+  color: #999;
+  font-size: 12px;
+}
+body .more h3 .line {
+  width: 14px;
+  height: 2px;
+  background-color: #1271ef;
+  margin-top: 5px;
+}
+body .more .more-content {
+  width: 1128px;
+  height: 420px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body .more .more-content li {
+  width: 354px;
+  height: 120px;
+  padding-top: 41px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  text-align: center;
+}
+body .nav-box {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  margin-left: 600px;
+  width: 72px;
+  margin-top: 32px;
+}
+body .nav-box li {
+  font-size: 14px;
+  line-height: 40px;
+  cursor: pointer;
+  position: relative;
+}
+body .nav-box .nav-active::before {
+  position: absolute;
+  top: 20px;
+  left: -14px;
+  content: '';
+  width: 8px;
+  height: 2px;
+  background-color: #1271ef;
+}
+body .foot-outer {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  top: 323px;
+}
+body .foot-outer .foot {
+  background-color: #fff;
+}
