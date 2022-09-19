@@ -202,6 +202,7 @@ body .foot-outer {
   background-color: #fff;
   position: relative;
   top: 323px;
+  border-top: 1px solid #efefef;
 }
 body .foot-outer .foot {
   background-color: #fff;

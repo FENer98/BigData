@@ -1,0 +1,211 @@
+@import url("../../assets/css/common.css");
+@import url("../../assets/css/normalize.css");
+
+body {
+    background-color: #f8f9fb;
+    //修改common的header样式
+    .header {
+        z-index: 2;
+
+        .header-selection {
+            a {
+                color: #fff;
+            }
+
+            .active {
+                color: #fff;
+            }
+
+            .active-li {
+                border-bottom: 2px solid #fff;
+            }
+        }
+
+        .header-button {
+            .header-login {
+                color: #fff;
+                border-color: #fff;
+            }
+        }
+    }
+
+    //banner设置
+    .banner {
+        background-color: #f1f1f1;
+        box-sizing: border-box;
+        height: 360px;
+        width: 100%;
+        position: relative;
+        top: -67px;
+
+        canvas {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-1000px);
+            min-width: 1200px;
+        }
+
+        .banner-mask {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.88);
+            z-index: 1;
+        }
+
+        .banner-content {
+            position: absolute;
+            left: 50%;
+            top: 56%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+            text-align: center;
+
+            h2 {
+                font-size: 36px;
+                color: #fff;
+                line-height: 54px;
+                font-weight: normal;
+            }
+
+            p {
+                font-size: 14px;
+                color: #fff;
+                line-height: 34px;
+            }
+
+            .tag {
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+
+    //顶部图片
+    .top-content{
+        height: 290px;
+        z-index: 10;
+        position: relative;
+        background-color: #fff;
+        top: -227px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .left-box{
+            width: 532px;
+            height: 290px;
+            padding-left: 48px;
+            padding-top: 48px;
+            box-sizing: border-box;
+            background-color: #fff;
+            h3{
+                font-size: 24px;
+                color: #181818;
+                line-height: 34px;
+                margin-top: 18px;
+                margin-bottom: 12px;
+                font-weight: normal;
+            }
+            p{
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp:3;
+                overflow: hidden;
+                font-size: 14px;
+                color: #666;
+                line-height: 24px;
+            }
+        }
+        .right-box{
+            img{
+                width: 580px;
+                height: 290px;
+            }
+        }
+    }
+
+    //详情介绍
+    .descript{
+        height: 194px;
+        padding: 0 50px;
+        box-sizing: border-box;
+        position: relative;
+        top: -187px;
+        .text{
+            font-size: 14px;
+            color: #181818;
+            line-height: 24px;
+            margin-top: 22px;
+        }
+        .author{
+            font-size: 12px;
+            color: #666;
+            height: 60px;
+            line-height: 60px;
+            text-align: right;
+            &::before{
+                content: '';
+                width: 14px;
+                height: 4px;
+                background-color: #1271ef;
+                display: inline-block;
+                position: relative;
+                left: -10px;
+                bottom: 2px;
+            }
+        }
+    }
+
+    //收益部分
+    .profit{
+        padding: 0 50px;
+        box-sizing: border-box;
+        position: relative;
+        top: -177px;
+        h5{
+            font-size: 24px;
+            line-height: 30px;
+            margin-top: 20px;
+            margin-bottom: 24px;
+            color: #181818;
+            font-weight: normal;
+        }
+        p{
+            font-size: 14px;
+            line-height: 22px;
+            color: #000;
+            margin-bottom: 54px;
+        }
+        img{
+            width: 1100px;
+            height: 618px;
+        }
+    }
+
+    //修改foot
+    .foot-outer{
+        width: 100%;
+        background-color: #fff;
+        border-top: 1px solid #efefef;
+        .foot{
+            background-color: #fff;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

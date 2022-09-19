@@ -1,0 +1,111 @@
+@import '../../assets/css/normalize.less';
+@import '../../assets/css/common.less';
+
+body {
+    background-color: #f3f5f8;
+    //修改头部样式
+    .header {
+        border: none;
+        background-color: #fff;
+        .header-content{
+            width: 1000px;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            p{
+                font-size: 14px;
+                line-height: 66px;
+                color: #8e8e8e;
+            }
+        }
+    }
+
+    //主要部分
+    main{
+        width: 1000px;
+        margin: 0 auto;
+        height: 669px;
+        margin-top: 80px;
+        background-color: #fff;
+        form{
+            width: 420px;
+            margin: 0 auto;
+            
+            h3{
+                font-size: 38px;
+                color: #4b4b4b;
+                line-height: 58px;
+                padding-top: 37px;
+                font-weight: normal;
+            }
+            h5{
+                font-size: 26px;
+                color: #4b4b4b;
+                font-weight: normal;
+                line-height: 48px;
+            }
+            .ad{
+                height: 32px;
+                width: 420px;
+                line-height: 32px;
+                padding-left: 70px;
+                border-radius: 3px;
+                color: #fff;
+                font-size: 16px;
+                background: url(../../assets/images/reg-gift.png) no-repeat 42px 6px;
+                background-color: #ed510a;
+                margin-bottom: 29px;
+                box-sizing: border-box;
+            }
+            .text-bar{
+                width: 420px;
+                height: 41px;
+                line-height: 41px;
+                font-size: 14px;
+                padding-left: 15px;
+                border: 1px solid #c5c5c5;
+                border-radius: 3px;
+                margin-bottom: 24px;
+                color: #a3a3a3;
+                outline: none;
+                box-sizing: border-box;
+            }
+            #textBtn{
+                width: 125px;
+                height: 41px;
+                border: 1px solid #c5c5c5;
+                background-color: #f3f3f3;
+                border-left: 0;
+                box-sizing: border-box;
+            }
+            #text{
+                width: 295px;
+                float: left;
+            }
+            p{
+                font-size: 12px;
+                color: #a3a3a3;
+                display: inline-block;
+                position: relative;
+                top: -2px;
+                span{
+                    color: #00bdff;
+                }
+            }
+            #btn{
+                display: block;
+                width: 100%;
+                height: 50px;
+                color: #5f5f5f;
+                font-size: 16px;
+                background-color: #e0e0e0;
+                border: none;
+                margin-top: 27px;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,500 @@
+/* 清除默认样式 */
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+  /* 清除图片底部间隙 */
+}
+ul {
+  list-style: none;
+  /* 清除列表前面样式 */
+}
+a {
+  text-decoration: none;
+  /* 去掉下划线 */
+}
+/* 重新设置样式 */
+/* 公共属性样式 */
+/* 测试工具 */
+.bd {
+  border: 1px solid red;
+}
+/* 版心 */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* 浮动 */
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::after {
+  content: '';
+  height: 0;
+  display: block;
+  clear: both;
+}
+/* 公共模块样式 */
+/* 头部导航 */
+.header {
+  width: 100%;
+  min-width: 1200px;
+  height: 66px;
+  border-bottom: 1px solid #aec7ec;
+  position: relative;
+}
+.header .header-logo {
+  position: absolute;
+  left: 32px;
+  top: 19px;
+  height: 30px;
+  cursor: pointer;
+}
+.header .header-selection {
+  position: absolute;
+  top: 24px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 160px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header .header-selection a {
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  padding-bottom: 19px;
+}
+.header .header-selection .active {
+  color: #00bdff;
+  font-size: 16px;
+  display: inline-block;
+}
+.header .header-selection .active-li {
+  border-bottom: 2px solid #00bdff;
+}
+.header .header-button {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+.header .header-button a {
+  font-size: 12px;
+  border-radius: 13px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 24px;
+  display: inline-block;
+}
+.header .header-button .header-login {
+  color: #fff;
+  width: 58px ;
+  height: 26px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+.header .header-button .header-logup {
+  color: #fff;
+  background-color: #ed510a;
+  width: 78px ;
+  height: 26px;
+}
+.header .header-button a:hover {
+  opacity: 0.5;
+}
+.title {
+  font-size: 40px;
+  line-height: 60px;
+  color: #181818;
+  font-weight: normal;
+}
+.links {
+  font-size: 12px;
+  line-height: 32px;
+  color: #1271ef;
+  margin-bottom: 34px;
+}
+.descript {
+  font-size: 14px;
+  line-height: 24px;
+  color: #666;
+  font-weight: normal;
+}
+/* 底部信息 */
+.foot {
+  height: 330px;
+  padding-bottom: 19px;
+  position: relative;
+  box-sizing: border-box;
+}
+.foot dl {
+  width: 720px;
+  height: 236px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  top: 16px;
+}
+.foot dl dt {
+  font-size: 14px;
+  color: #181818;
+  line-height: 68px;
+}
+.foot dl dd {
+  font-size: 12px;
+  line-height: 28px;
+  color: #b3b3b3;
+  cursor: pointer;
+}
+.foot .QR {
+  width: 110px;
+  height: 210px;
+  position: absolute;
+  right: 0;
+  top: 16px;
+  text-align: right;
+}
+.foot .QR h5 {
+  font-size: 16px;
+  line-height: 28px;
+  padding-top: 21px;
+  color: #181818;
+  font-weight: normal;
+}
+.foot .QR p {
+  font-size: 12px;
+  line-height: 27px;
+  margin-bottom: 24px;
+  color: #c0c0c0;
+}
+.foot .rights {
+  height: 21px;
+  margin-top: 38px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #d1d1d1;
+  position: absolute;
+  bottom: 19px;
+}
+.foot .rights img {
+  margin-right: 6px;
+}
+.foot .rights span {
+  margin-right: 6px;
+}
+.foot .rights .right-span {
+  position: absolute;
+  right: 0;
+  margin-right: 0;
+}
+/* 登录菜单 */
+.tab-box {
+  width: 360px;
+  height: 324px;
+  position: relative;
+}
+.tab-box .tab-sel {
+  width: 190px;
+  margin: 0 auto 36px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tab-box .tab-sel li:not(.line) {
+  line-height: 44px;
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+}
+.tab-box .tab-sel li.active-sel {
+  color: #00bdff;
+  position: relative;
+}
+.tab-box .tab-sel li.active-sel::after {
+  content: '';
+  width: 43px;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  background-color: #00bdff;
+}
+.tab-box .tab-sel .line {
+  width: 2px;
+  height: 12px;
+  background-color: #eee;
+  margin-top: 16px;
+}
+.tab-box .login-sec {
+  width: 360px;
+  height: 242px;
+  background-color: #fff;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+}
+.tab-box .login-sec .user-box {
+  height: 24px;
+  line-height: 24px;
+  padding-bottom: 9px;
+  padding-left: 32px;
+  background: url(../../assets/images/loginIcon.png) no-repeat;
+  background-position: -52px -1px;
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 26px;
+  position: relative;
+}
+.tab-box .login-sec .user-box input {
+  border: none;
+  outline: none;
+  width: 296px;
+  height: 24px;
+  line-height: 24px;
+  color: #000;
+  font-size: 12px;
+}
+.tab-box .login-sec .pass-box {
+  height: 24px;
+  line-height: 24px;
+  padding-bottom: 9px;
+  padding-left: 32px;
+  background: url(../../assets/images/loginIcon.png) no-repeat;
+  background-position: -24px -1px;
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 26px;
+  position: relative;
+}
+.tab-box .login-sec .pass-box input {
+  border: none;
+  outline: none;
+  width: 296px;
+  height: 24px;
+  line-height: 24px;
+  color: #000;
+  font-size: 12px;
+}
+.tab-box .login-sec a {
+  width: 56px;
+  height: 52px;
+  color: #00bdff;
+  line-height: 52px;
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  top: 94px;
+}
+.tab-box .login-sec .login-btn {
+  width: 360px;
+  height: 46px;
+  background-color: #03c5ff;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  margin-top: 26px;
+}
+.tab-box .login-sec p {
+  text-align: right;
+  width: 290px;
+  margin: 0 auto;
+  line-height: 50px;
+  color: #909090;
+  font-size: 14px;
+}
+.tab-box .login-sec p span {
+  color: #00bdff;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.tab-box .login-sec p .forget-img {
+  width: 15px;
+  height: 21px;
+  display: inline-block;
+  background: url(../../assets/images/loginIcon.png) no-repeat;
+  background-position: -56px -31px;
+  text-align: bottom;
+  position: relative;
+  top: 2px;
+}
+.tab-box .login-sec .user-res,
+.tab-box .login-sec .pass-res {
+  height: 12px;
+  width: 360px;
+  position: absolute;
+  left: 0px;
+  bottom: -17px;
+  font-size: 12px;
+  text-align: left;
+  line-height: 12px;
+}
+.tab-box .logup-sec {
+  width: 360px;
+  height: 291px;
+  background-color: #fff;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+}
+.tab-box .logup-sec .qr-box {
+  width: 290px;
+  height: 241px;
+  background-color: #fcfcfc;
+  border: 1px solid #eee;
+  padding-top: 30px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin: 0 auto;
+}
+.tab-box .logup-sec .qr-box img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 5px;
+}
+.tab-box .logup-sec .qr-box p {
+  line-height: 30px;
+}
+.tab-box .logup-sec .qr-box .bottom-p {
+  text-align: left;
+  width: 290px;
+  margin: 0 auto;
+  line-height: 50px;
+  color: #909090;
+  font-size: 14px;
+  position: relative;
+  bottom: -25px;
+  left: -1px;
+  display: none;
+}
+.tab-box .logup-sec .qr-box .bottom-p span {
+  color: #00bdff;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.tab-box .logup-sec .qr-box .bottom-p .forget-img {
+  width: 15px;
+  height: 21px;
+  display: inline-block;
+  background: url(../../assets/images/loginIcon.png) no-repeat;
+  background-position: -56px -31px;
+  text-align: bottom;
+  position: relative;
+  top: 2px;
+}
+.tab-box .active-sec {
+  z-index: 10;
+}
+body {
+  background-color: #f3f5f8;
+}
+body .header {
+  border: none;
+  background-color: #fff;
+}
+body .header .header-content {
+  width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body .header .header-content p {
+  font-size: 14px;
+  line-height: 66px;
+  color: #8e8e8e;
+}
+body main {
+  width: 1000px;
+  margin: 0 auto;
+  height: 669px;
+  margin-top: 80px;
+  background-color: #fff;
+}
+body main form {
+  width: 420px;
+  margin: 0 auto;
+}
+body main form h3 {
+  font-size: 38px;
+  color: #4b4b4b;
+  line-height: 58px;
+  padding-top: 37px;
+  font-weight: normal;
+}
+body main form h5 {
+  font-size: 26px;
+  color: #4b4b4b;
+  font-weight: normal;
+  line-height: 48px;
+}
+body main form .ad {
+  height: 32px;
+  width: 420px;
+  line-height: 32px;
+  padding-left: 70px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+  background: url(../../assets/images/reg-gift.png) no-repeat 42px 6px;
+  background-color: #ed510a;
+  margin-bottom: 29px;
+  box-sizing: border-box;
+}
+body main form .text-bar {
+  width: 420px;
+  height: 41px;
+  line-height: 41px;
+  font-size: 14px;
+  padding-left: 15px;
+  border: 1px solid #c5c5c5;
+  border-radius: 3px;
+  margin-bottom: 24px;
+  color: #a3a3a3;
+  outline: none;
+  box-sizing: border-box;
+}
+body main form #textBtn {
+  width: 125px;
+  height: 41px;
+  border: 1px solid #c5c5c5;
+  background-color: #f3f3f3;
+  border-left: 0;
+  box-sizing: border-box;
+}
+body main form #text {
+  width: 295px;
+  float: left;
+}
+body main form p {
+  font-size: 12px;
+  color: #a3a3a3;
+  display: inline-block;
+  position: relative;
+  top: -2px;
+}
+body main form p span {
+  color: #00bdff;
+}
+body main form #btn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  color: #5f5f5f;
+  font-size: 16px;
+  background-color: #e0e0e0;
+  border: none;
+  margin-top: 27px;
+}

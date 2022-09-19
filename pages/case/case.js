@@ -41,7 +41,7 @@ const thirdRow = document.querySelector(".third-row")
 for (let i = 0; i < dataArr.length; i++){
     let newLi = document.createElement("li")
     newLi.innerHTML = `
-    <a href="./case-details.html"></a>
+    <a href="../case-details/case-details.html"></a>
     <img src="../../assets/images/${dataArr[i].img}" alt="">
     <h5>${dataArr[i].name}</h5>
     <p>${dataArr[i].desc}</p>
