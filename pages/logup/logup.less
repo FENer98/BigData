@@ -33,7 +33,6 @@ body {
         form{
             width: 420px;
             margin: 0 auto;
-            
             h3{
                 font-size: 38px;
                 color: #4b4b4b;
@@ -80,6 +79,7 @@ body {
                 background-color: #f3f3f3;
                 border-left: 0;
                 box-sizing: border-box;
+                margin-bottom: 24px;
             }
             #text{
                 width: 295px;
@@ -105,7 +105,48 @@ body {
                 border: none;
                 margin-top: 27px;
             }
+            .active-btn{
+                background-color: rgb(21, 189, 237) !important;
+                color: #fff !important;
+                cursor: pointer;
+            }
+            .outerBox{
+                position: relative;
+            }
+            img{
+                position: absolute;
+                right: 4px;
+                top: 12px;
+                display: none;
+            }
+            .textClear{
+                right: 129px;
+            }
+            .textError,.passError,.telError,.userError{
+                height: 20px;
+                position: absolute;
+                left: 425px;
+                top: 12px;
+                width: 170px;
+                display: none;
+                .errorText{
+                    color: #f15b5b;
+                    font-size: 12px;
+                    line-height: 20px;
+                    height: 20px;
+                    position: absolute;
+                    bottom: 3px;
+                }
+                .errorImg{
+                    width: 20px;
+                    height: 20px;
+                    background: url(../../assets/images/sprite2.png) no-repeat 0 -128px;
+                    display: inline-block;
+                }
+                
+            }
 
+            
         }
     }
 }

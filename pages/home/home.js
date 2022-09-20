@@ -38,8 +38,14 @@ outer.onmouseleave = () => {
 const prevBtn = document.querySelector(".prev-img")
 const nextBtn = document.querySelector(".next-img")
 // console.log(prevBtn);
-
+console.log(3333)
 prevBtn.addEventListener("click", () => {
+    console.log(111222)
+    switchFn("prev")
+    console.log(1);
+})
+prevBtn.addEventListener("click", () => {
+    console.log(111222)
     switchFn("prev")
     console.log(1);
 })
@@ -54,7 +60,7 @@ function switchFn(para) {
     //显示的图片
     const current = document.querySelector(".current")
     //获取图片数组
-    const imgArray = Array.from(document.querySelectorAll(".img-list li"))
+    const imgArray = Array.from(document.querySelectorAll(".banner-img-list li"))
 
 
     let dir //新声明一个变量来获取要切换的对象

@@ -29,6 +29,7 @@
   height: 66px;
   border-bottom: 1px solid #aec7ec;
   position: relative;
+  z-index: 10;
 }
 .header .header-logo {
   position: absolute;
@@ -246,6 +247,9 @@
   color: #000;
   font-size: 12px;
 }
+.tab-box .login-sec .user-box .user-delBtn {
+  display: none;
+}
 .tab-box .login-sec .pass-box {
   height: 24px;
   line-height: 24px;
@@ -265,6 +269,9 @@
   line-height: 24px;
   color: #000;
   font-size: 12px;
+}
+.tab-box .login-sec .pass-box .pass-delBtn {
+  display: none;
 }
 .tab-box .login-sec a {
   width: 56px;

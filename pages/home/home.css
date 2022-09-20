@@ -47,6 +47,7 @@ a {
   height: 66px;
   border-bottom: 1px solid #aec7ec;
   position: relative;
+  z-index: 10;
 }
 .header .header-logo {
   position: absolute;
@@ -264,6 +265,9 @@ a {
   color: #000;
   font-size: 12px;
 }
+.tab-box .login-sec .user-box .user-delBtn {
+  display: none;
+}
 .tab-box .login-sec .pass-box {
   height: 24px;
   line-height: 24px;
@@ -283,6 +287,9 @@ a {
   line-height: 24px;
   color: #000;
   font-size: 12px;
+}
+.tab-box .login-sec .pass-box .pass-delBtn {
+  display: none;
 }
 .tab-box .login-sec a {
   width: 56px;
@@ -408,7 +415,6 @@ a {
   width: 100%;
   min-width: 1200px;
   position: relative;
-  z-index: -1;
   top: -66px;
 }
 .banner .outer {
@@ -416,31 +422,31 @@ a {
   height: 680px;
   width: 100%;
 }
-.banner .outer .img-list :first-child {
+.banner .outer .banner-img-list :first-child {
   background-image: url(../../assets/images/banner1.png);
   background-position: center;
   background-repeat: no-repeat;
   display: none;
 }
-.banner .outer .img-list :last-child {
+.banner .outer .banner-img-list :last-child {
   background-image: url(../../assets/images/banner3.png);
   background-position: center;
   background-repeat: no-repeat;
   display: none;
 }
-.banner .outer .img-list :nth-child(2) {
+.banner .outer .banner-img-list :nth-child(2) {
   background-image: url(../../assets/images/banner2.png);
   background-position: center;
   background-repeat: no-repeat;
   display: none;
 }
-.banner .outer .img-list li {
+.banner .outer .banner-img-list li {
   position: absolute;
   height: 680px;
   width: 100%;
   overflow: hidden;
 }
-.banner .outer .img-list .current {
+.banner .outer .banner-img-list .current {
   z-index: 1;
   display: block;
 }

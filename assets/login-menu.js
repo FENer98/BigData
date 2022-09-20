@@ -44,16 +44,36 @@ loginBtn.addEventListener("click", event => {
 const userDelBtn = document.querySelector(".user-delBtn")
 const passDelBtn = document.querySelector(".pass-delBtn")
 
+user.addEventListener("input", () => {
+    if (user.value) {
+        userDelBtn.style.display = "inline"
+    }
+    else {
+        userDelBtn.style.display = "none"
+    }
+})
+
+pass.addEventListener("input", () => {
+    if (pass.value) {
+        passDelBtn.style.display = "inline"
+    }
+    else {
+        passDelBtn.style.display = "none"
+    }
+})
+
 userDelBtn.style.cursor = "pointer"
 passDelBtn.style.cursor = "pointer"
 
 userDelBtn.onclick = () => {
     user.value = ''
     userRes.textContent = ''
+    userDelBtn.style.display = "none"
 }
 passDelBtn.onclick = () => {
     pass.value = ''
     passRes.textContent = ''
+    passDelBtn.style.display = "none"
 }
 
 

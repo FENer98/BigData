@@ -27,11 +27,44 @@
             <h3>欢迎注册</h3>
             <h5>百款接口免费试用</h5>
             <div class="ad">注册即送300元大礼包</div>
-            <input class="text-bar" type="text" id="user" placeholder="用户名（6~20位字母数字）">
-            <input class="text-bar" type="tel" id="telNum" placeholder="请输入手机号码">
-            <input class="text-bar" type="text" id="text" placeholder="请输入手机短信验证码">
+            <div class="outerBox">
+                <input class="text-bar" type="text" id="user" placeholder="用户名（6~20位字母数字）">
+                <p class="userError">
+                    <span class="errorImg"></span>
+                    <span class="errorText">昵称需在6-12位字母数字间</span>
+                </p>
+                <img class="userClear" src="../../assets/images/clearInput.png" alt="">
+            </div>
+
+            <div class="outerBox">
+                <input class="text-bar" type="tel" id="telNum" placeholder="请输入手机号码">
+                <p class="telError">
+                    <span class="errorImg"></span>
+                    <span class="errorText">请输入正确的手机号</span>
+                </p>
+                <img class="telClear" src="../../assets/images/clearInput.png" alt="">
+            </div>
+            
+            <div class="outerBox">
+                <input class="text-bar" type="text" id="text" placeholder="请输入手机短信验证码">
+                <p class="textError">
+                    <span class="errorImg"></span>
+                    <span class="errorText">请输入4位手机验证码</span>
+                </p>
+                <img class="textClear" src="../../assets/images/clearInput.png" alt="">
+            </div>
+
             <button id="textBtn">获取验证码</button>
-            <input class="text-bar" type="password" id="password" placeholder="请输入6至12位的密码">
+
+            <div class="outerBox">
+                <input class="text-bar" type="password" id="password" placeholder="请输入6至12位的密码">
+                <p class="passError">
+                    <span class="errorImg"></span>
+                    <span class="errorText">请输入6至12位的密码</span>
+                </p>
+                <img class="passClear" src="../../assets/images/clearInput.png" alt="">
+            </div>
+
             <input type="checkbox" id="policyBtn">
             <p>我已阅读并接受<span> 《源码用户服务协议》</span><span> 《源码隐私政策》</span></p>
             <button id="btn">立即注册</button>

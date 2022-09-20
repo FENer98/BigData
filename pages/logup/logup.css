@@ -473,6 +473,7 @@ body main form #textBtn {
   background-color: #f3f3f3;
   border-left: 0;
   box-sizing: border-box;
+  margin-bottom: 24px;
 }
 body main form #text {
   width: 295px;
@@ -497,4 +498,52 @@ body main form #btn {
   background-color: #e0e0e0;
   border: none;
   margin-top: 27px;
+}
+body main form .active-btn {
+  background-color: #15bded !important;
+  color: #fff !important;
+  cursor: pointer;
+}
+body main form .outerBox {
+  position: relative;
+}
+body main form img {
+  position: absolute;
+  right: 4px;
+  top: 12px;
+  display: none;
+}
+body main form .textClear {
+  right: 129px;
+}
+body main form .textError,
+body main form .passError,
+body main form .telError,
+body main form .userError {
+  height: 20px;
+  position: absolute;
+  left: 425px;
+  top: 12px;
+  width: 170px;
+  display: none;
+}
+body main form .textError .errorText,
+body main form .passError .errorText,
+body main form .telError .errorText,
+body main form .userError .errorText {
+  color: #f15b5b;
+  font-size: 12px;
+  line-height: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 3px;
+}
+body main form .textError .errorImg,
+body main form .passError .errorImg,
+body main form .telError .errorImg,
+body main form .userError .errorImg {
+  width: 20px;
+  height: 20px;
+  background: url(../../assets/images/sprite2.png) no-repeat 0 -128px;
+  display: inline-block;
 }
